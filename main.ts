@@ -14,17 +14,20 @@ basic.forever(function () {
             basic.clearScreen()
             plazieren_x += 1
         }
-    } else if (input.isGesture(Gesture.TiltLeft)) {
+    }
+    if (input.isGesture(Gesture.TiltLeft)) {
         if (plazieren_x > 0) {
             basic.clearScreen()
             plazieren_x += -1
         }
-    } else if (input.isGesture(Gesture.LogoUp)) {
+    }
+    if (input.isGesture(Gesture.ScreenDown)) {
         if (plazieren_y > 0) {
             basic.clearScreen()
             plazieren_y += -1
         }
-    } else if (input.isGesture(Gesture.ScreenDown)) {
+    }
+    if (input.isGesture(Gesture.LogoUp)) {
         if (plazieren_y < 4) {
             basic.clearScreen()
             plazieren_y += 1
